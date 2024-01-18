@@ -1,11 +1,14 @@
+import MainPage from "./pages/MainPage/MainPage";
+import Playbar from "./components/Playbar/Playbar";
+import style from "./global.module.scss";
 
-const App = ()=> {
-
+const App = () => {
   return (
-    <>
-     <h1>putin Pidor</h1>
-    </>
-  )
-}
+    <div className={style.wrapper}>
+      <Playbar />
+      <MainPage />
+    </div>
+  );
+};
 
-export default App
+export default App;
